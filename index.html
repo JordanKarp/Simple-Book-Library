@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Simple Book Library</title>
+</head>
+
+<body>
+    <header>
+        <h1>Simple Library</h1>
+        <button data-open-modal id="addButton" type="button">+</button>
+    </header>
+    <main>
+        <div id="bookshelf">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Copyright 2023, Jordan Karp</p>
+    </footer>
+    <dialog data-modal>
+        <form id="addBookForm" name="addBookForm">
+            <button data-close-modal id="closeButton" type="button">X</button>
+            <h2>Add a Book:</h2>
+            <input type="text" id="title" placeholder="Title" required />
+            <input type="text" id="author" placeholder="Author" required />
+            <input type="checkbox" id="isRead" />
+            <label for="isRead">Completed?</label>
+            </br>
+            <button data-close-modal type="submit">Submit</button>
+        </form>
+    </dialog>
+
+</body>
+
+</html>

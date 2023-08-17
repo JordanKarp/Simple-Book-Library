@@ -1,0 +1,71 @@
+header,
+body,
+footer {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: lightgrey;
+    padding: 20px;
+    /* margin: 10px; */
+}
+
+#addButton {
+    width: max(100px, 10%)
+}
+
+main {
+    min-height: 50vh;
+}
+
+#bookshelf {
+    display: flex;
+}
+
+
+input,
+button {
+    margin: 10px 5px;
+}
+
+.card {
+    padding: 10px;
+    margin: 20px;
+    background-color: lightgrey;
+    border: 1px solid black;
+    min-width: 200px;
+    max-width: 40vh;
+    min-height: 10vh;
+    max-height: 20vh;
+    position: relative;
+}
+
+#closeButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.readIcon {
+    position: absolute;
+    font-size: 2em;
+    top: 5px;
+    right: 5px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: lightgrey;
+    padding: 10px
+}
