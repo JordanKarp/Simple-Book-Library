@@ -26,6 +26,7 @@ main {
 
 #bookshelf {
     display: flex;
+    width: 100vh;
 }
 
 
