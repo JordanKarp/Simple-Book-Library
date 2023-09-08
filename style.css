@@ -26,7 +26,8 @@ main {
 
 #bookshelf {
     display: flex;
-    width: 100vh;
+    width: 100vw;
+    flex-wrap: wrap;
 }
 
 
@@ -69,4 +70,8 @@ footer {
     justify-content: center;
     background-color: lightgrey;
     padding: 10px
+}
+
+footer p a {
+    color: black;
 }
