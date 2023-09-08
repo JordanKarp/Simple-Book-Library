@@ -45,6 +45,7 @@ function drawLibrary() {
         const readIcon = document.createElement('p')
 
         bookCard.classList.add('card')
+        bookCard.classList.add('cover')
         readIcon.classList.add('readIcon')
 
 
