@@ -29,11 +29,6 @@ closeModal.addEventListener("click", () => {
 function drawLibrary() {
     bookshelf.innerHTML = ''
 
-    // myLibrary.sort((a, b) => {
-    //     return a[1] - b[1];
-    // })
-
-
     for (let book of myLibrary) {
         const bookTitle = book[0]
         const bookAuthor = book[1]
@@ -45,9 +40,7 @@ function drawLibrary() {
         const readIcon = document.createElement('p')
 
         bookCard.classList.add('card')
-        bookCard.classList.add('cover')
         readIcon.classList.add('readIcon')
-
 
         title.textContent = bookTitle
         author.textContent = bookAuthor
@@ -74,7 +67,6 @@ function resetModal() {
 }
 
 const addBookToLibrary = (e) => {
-    // do stuff here
     e.preventDefault()
     const title = document.getElementById('title').value
     const author = document.getElementById('author').value
